@@ -11,10 +11,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
     buttons = [[
-        InlineKeyboardButton('📜 Support Group', url='https://t.me/PrimeFlix_Chats'),
-        InlineKeyboardButton('Update Channel ♻️', url='https://t.me/PrimeFlixMedia_All')
+        InlineKeyboardButton('𝐆𝐫𝐨𝐮𝐩', url='https://t.me/PrimeFlix_Chats'),
+        InlineKeyboardButton('𝐂𝐡𝐚𝐧𝐧𝐞𝐥', url='https://t.me/PrimeFlixMedia_All')
     ],[
-        InlineKeyboardButton('SouceCode 💡', url='https://t.me/Oomban_ULLATH')
+        InlineKeyboardButton('𝐒𝐨𝐮𝐫𝐜𝐞-𝐂𝐨𝐝𝐞', url='https://t.me/Oomban_ULLATH')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -27,7 +27,7 @@ async def start(client, message):
 @Client.on_message(filters.private & filters.command(['help']))
 async def help(client, message):
     buttons = [[
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('𝐂𝐥𝐨𝐬𝐞🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
@@ -39,8 +39,8 @@ async def help(client, message):
 @Client.on_message(filters.private & filters.command(['about']))
 async def about(client, message):
     buttons = [[
-        InlineKeyboardButton('💡 SouceCode', url='https://t.me/Oomban_ULLATH'),
-        InlineKeyboardButton('close 🔐', callback_data='close_btn')
+        InlineKeyboardButton('𝐒𝐨𝐮𝐫𝐜𝐞-𝐂𝐨𝐝𝐞', url='https://t.me/Oomban_ULLATH'),
+        InlineKeyboardButton('𝐂𝐥𝐨𝐬𝐞🔐', callback_data='close_btn')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await client.send_message(
