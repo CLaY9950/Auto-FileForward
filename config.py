@@ -7,11 +7,11 @@ import logging
 
 class Config:
     
-    API_ID = int(os.environ.get("API_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = int(os.environ.get("API_ID", 10632057))
+    API_HASH = os.environ.get("API_HASH" "6b343fdad5be6551cf29ab874079a680")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5294843580:AAHcjgzILHE0STujSVY6FvksJslxLPeCO1s") 
     BOT_SESSION = os.environ.get("BOT_SESSION", "bot") 
-    CAPTION = os.environ.get("CAPTION", "")
+    CAPTION = os.environ.get("CAPTION", "{file_name}")
     FROM_CHANNEL = os.environ.get("FROM_CHANNEL", None)
     FILTER_TYPE = os.environ.get("FILTER_TYPE", "")
     OWNER_ID = os.environ.get("OWNER_ID", 12345)
